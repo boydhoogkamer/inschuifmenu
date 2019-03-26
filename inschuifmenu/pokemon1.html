@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Boyd Hoogkamer">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger navigatie</title>
+  <style>
+    #toggleMenu:checked~main {
+      margin-left: 10em;
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+    }
+
+    #toggleMenu:checked~main #toggleLabel::before {
+      content: "\2716";
+      cursor: pointer;
+    }
+
+    nav {
+      position: fixed;
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s ease-out;
+    }
+  </style>
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+
+  <nav>
+    <h4>menu</h4>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      <li>
+      <li>
+        <a href="Pokemon1.html">Pokemon1</a>
+      </li>
+      <li>
+        <a href="Pokemon2.html">Pokemon2</a>
+      </li>
+      <li>
+        <a href="Pokemon3.html">Pokemon3</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Charmander</h1>
+
+    <p><img src="img/pokemon1.png">
+      Charmander was mentioned in the first episode of the anime, Pokémon - I Choose You!, as one of the three starter Pokémon new Trainers in Pallet Town can choose from. Ash dreamed of owning one, although it was his last choice of a starter coming
+      after Squirtle and Bulbasaur. However, when he arrived at Oak's lab, he found out it was too late, as another Trainer who started the same day had already taken it.
+    </p>
+    <ul>
+      <li>A Charmander appeared in Pikachu's Vacation as one of the Pokémon seen at the Pokémon Theme Park.</li>
+
+      <li>A Trainer's Charmander appeared in Friends to the End, during the closing ceremonies of the Indigo Plateau Conference.</li>
+
+      <li>A Charmander appeared in the Japanese credits of Pikachu's Rescue Adventure.</li>
+
+      <li>A starter Pokémon Charmander appeared in a flashback in Don't Touch That 'dile.</li>
+
+      <li>A Charmander was used by one of the students of the Pokémon Trainers' School in Gonna Rule The School!.</li>
+
+      <li>A Charmander appeared in Meloetta's Moonlight Serenade as one of the Pokémon watching Meloetta's concert.</li>
+    </ul>
+    <p>Charmander (Japanese: ヒトカゲ Hitokage) is a Fire-type Pokémon introduced in Generation I.
+
+      It evolves into Charmeleon starting at level 16, which evolves into Charizard starting at level 36.
+
+      Along with Bulbasaur and Squirtle, Charmander is one of three starter Pokémon of Kanto available at the beginning of Pokémon Red, Green, Blue, FireRed, and LeafGreen.
+    </p>
+    <div class="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img class="link" src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5">
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>

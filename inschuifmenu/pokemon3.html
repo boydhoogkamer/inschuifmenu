@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Boyd Hoogkamer">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger navigatie</title>
+  <style>
+  #toggleMenu:checked~main {
+    margin-left: 10em;
+  }
+
+  #toggleLabel::before {
+    content: "\2630";
+    cursor: pointer;
+  }
+
+  #toggleMenu:checked~main #toggleLabel::before {
+    content: "\2716";
+    cursor: pointer;
+  }
+
+  nav {
+    position: fixed;
+  }
+
+  main {
+    position: absolute;
+    margin-left: 0;
+    transition: margin-left .6s ease-out;
+  }
+  </style>
+</head>
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+
+
+  <nav>
+    <h4>menu</h4>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      <li>
+      <li>
+        <a href="Pokemon1.html">Pokemon1</a>
+      </li>
+      <li>
+        <a href="Pokemon2.html">Pokemon2</a>
+      </li>
+      <li>
+        <a href="Pokemon3.html">Pokemon3</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Bulbasaur</h1>
+
+    <p><img src="img/pokemon3.png">
+      Bulbasaur is a small, quadruped Pokémon that has turquoise skin with darker teal patches. It has red eyes with white pupils and scleras. It also has pointed, ear-like structures on top of its head. Its snout is short and blunt, and it has a
+      wide mouth. A pair of small, pointed teeth are visible in the upper jaw when its mouth is open. Each of its thick legs ends with three sharp claws. On its back is a green plant bulb, which is grown from a seed planted there at birth. The bulb
+      provides it with energy through photosynthesis as well as from the nutrient-rich seeds contained within.
+    </p>
+    <p>As mentioned in the anime, starter Pokémon are raised by Breeders to be distributed to new Trainers. Having been domesticated from birth, Bulbasaur is regarded as both a rare and well-behaved Pokémon. It is known to be extremely loyal, even
+      after long-term abandonment. Bulbasaur has also shown itself to be an excellent caretaker, even having a special technique called the "Bulba-by." To perform this technique, Bulbasaur uses its vines to pick up a young Pokémon and soothingly
+      rocks it in the air. It is found in grasslands and forests throughout the Kanto region.
+    </p>
+    <p>However, due to Bulbasaur's status as starter Pokémon, it is hard to come by in the wild and generally found under the ownership of a Trainer. It has been observed that a Bulbasaur's bulb will flash blue when it is ready to evolve. If it does
+      not want to evolve, it struggles to resist the transformation. Many Bulbasaur gather every year in a hidden garden in Kanto to evolve into Ivysaur in a ceremony led by a Venusaur.
+    </p>
+    <div class="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img class="link" src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5">
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>

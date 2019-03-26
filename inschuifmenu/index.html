@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Boyd Hoogkamer">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger navigatie</title>
+  <style>
+    #toggleMenu:checked~main {
+      margin-left: 10em;
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+    }
+
+    #toggleMenu:checked~main #toggleLabel::before {
+      content: "\2716";
+      cursor: pointer;
+
+    }
+
+    nav {
+      position: fixed;
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s ease-out;
+    }
+  </style>
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+
+  <nav>
+    <h4>menu</h4>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      <li>
+        <a href="Pokemon1.html">Pokemon1</a>
+      </li>
+      <li>
+        <a href="Pokemon2.html">Pokemon2</a>
+      </li>
+      <li>
+        <a href="Pokemon3.html">Pokemon3</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Pokemon</h1>
+
+    <p><img src="img/pokemon.png">
+      Pokémon[a] (English: /ˈpoʊkɪˌmɒn, -ki-, -keɪ-/),[1][2][3] also known as Pocket Monsters[b] in Japan, is a media franchise managed by The Pokémon Company, a Japanese consortium between Nintendo, Game Freak, and Creatures.[4] The franchise
+      copyright is shared by all three companies, but Nintendo is the sole owner of the trademark.[5] The franchise was created by Satoshi Tajiri in 1995,[6] and is centered on fictional creatures called "Pokémon", which humans, known as Pokémon
+      Trainers, catch and train to battle each other for sport. The English slogan for the franchise is "Gotta Catch 'Em All".[7][8] Works within the franchise are set in the Pokémon universe.
+    </p>
+    <p>The franchise began as Pokémon Red and Green (released outside of Japan as Pokémon Red and Blue), a pair of video games for the original Game Boy that were developed by Game Freak and published by Nintendo in February 1996. Pokémon has since
+      gone on to become the highest-grossing media franchise of all time,[9][10][11] with $90 billion in total franchise revenue.
+    </p>
+    <p>The original video game series is the second best-selling video game franchise (behind Nintendo's Mario franchise)[14] with more than 300 million copies sold[15] and 1 billion mobile downloads,[16] and it spawned a hit anime television series
+      that has become the most successful video game adaptation[17] with over 20 seasons and 1,000 episodes in 124 countries.[15] In addition, the Pokémon franchise includes the world's top-selling toy brand,[18] the top-selling trading card game[19]
+      with over 25.7 billion cards sold,[15] an anime film series, a live-action film, books, manga comics, music, and merchandise. The franchise is also represented in other Nintendo media, such as the Super Smash Bros. series.
+    </p>
+    <div class="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img class="link" src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5">
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+      </a>
+    </div>
+  </main>
+
+</body>
+
+</html>
